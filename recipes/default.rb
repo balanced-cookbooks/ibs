@@ -7,7 +7,7 @@ include_recipe 'balanced-omnibus'
   end
 end
 
-%w(fpm deb-s3).each do |name|
+%w(fpm deb-s3 bundle).each do |name|
   gem_package name do
     action :install
   end
